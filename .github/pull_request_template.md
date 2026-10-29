@@ -21,9 +21,8 @@
 - [ ] One task only, no unrelated changes
 - [ ] Real work for the task, not just a typo, rename or formatting fix
 - [ ] Branch name follows the team convention, and the PR targets `main`
-- [ ] Specific and action-oriented (e.g. "Add user registration form")
+- [ ] PR title is specific and action-oriented (e.g. "Add user registration form")
 - [ ] Debug statements and temporary files removed
 - [ ] No passwords, secret keys or `.env` files committed
 - [ ] Relevant tests or verification completed successfully
 - [ ] Approved by a teammate who is not the author
-- [ ] Meets the Definition of Done (All applicable requirements met)
