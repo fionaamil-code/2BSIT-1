@@ -16,6 +16,8 @@
 **How was the work checked?**
   <!-- Provide steps or evidence for reviewing the work. -->
 
+## Proof of Work
+
 ## Checklist
 - [ ] Linked with `Closes #n` above
 - [ ] One task only, no unrelated changes
