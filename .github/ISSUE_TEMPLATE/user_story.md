@@ -1,5 +1,5 @@
 ---
-name: User Story
+name: User Story/ Sprint Task
 about: Create a sprint task with acceptance criteria
 title: "[S1-XXX-00] Short task title"
 labels: user-story
