@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in – Hope, Inc. ERP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:wght@600&display=swap">
+<link rel="stylesheet" href="hope.css">
+</head>
+<body>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<div class="auth">
+  <aside class="brand-panel">
+    <div class="brand"><span class="logo" aria-hidden="true">H</span><span class="brand-name">Hope, Inc. ERP</span></div>
+    <p class="tagline">Customers, products, employees and sales, kept together in one place.</p>
+  </aside>
+  <main class="auth-main">
+  <div class="card">
+
+  <h1>Log in</h1>
+  <p class="sub">Use your username or email address.</p>
+
+  <form id="loginForm" novalidate>
+    <div class="field">
+      <label for="identifier">Username or email</label>
+      <input type="text" id="identifier" name="identifier" autocomplete="username" aria-describedby="identifierError">
+      <p class="error" id="identifierError"></p>
+    </div>
+
+    <div class="field">
+      <label for="password">Password</label>
+      <div class="input-wrap">
+        <input type="password" id="password" name="password" class="has-toggle" autocomplete="current-password" aria-describedby="passwordError">
+        <button type="button" class="toggle" id="togglePw" aria-controls="password" aria-pressed="false">Show</button>
+      </div>
+      <p class="error" id="passwordError"></p>
+    </div>
+
+    <div class="row">
+      <label class="check"><input type="checkbox" id="remember" name="remember"> Remember me</label>
+      <a href="forgot-password.html">Forgot password?</a>
+    </div>
+
+    <button type="submit" class="btn" id="submitBtn">
+      <span class="spinner" aria-hidden="true"></span>
+      <span id="btnText">Log in</span>
+    </button>
+  </form>
+
+  <p class="foot">No account yet? <a href="register.html">Register</a></p>
+  </div>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script src="auth-service.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
