@@ -1,0 +1,16 @@
+{
+  "name": "hope-db",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Hope, Inc. ERP - database migration runner",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "migrate": "node migrate.mjs up",
+    "migrate:status": "node migrate.mjs status",
+    "migrate:new": "node migrate.mjs new"
+  },
+  "dependencies": {
+    "pg": "^8.11.0"
+  }
+}
